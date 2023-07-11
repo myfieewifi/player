@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>播放</title>
+		<link rel="stylesheet" type="text/css" href="./css/ckplayer.css">
+		<style>
+		.video {
+			width: 1280px;
+			height: 720px;
+		}
+		#container {
+			margin: 20px;
+		}
+		#videoUrl {
+			padding: 10px;
+			width: 300px;
+		}
+		.play {
+			padding: 10px 20px;
+			margin-top: 10px;
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			cursor: pointer;
+		}
+		</style>
+	</head>
+	<body>
+		<!-- 输入区 -->
+		<div id="container">
+			<span>视频地址：</span>
+			<input type="text" id="videoUrl" placeholder="输入视频地址">
+			<button class="play"onclick="playVideo()">播放</button>
+		 </div>
+		 <!-- 播放器 -->
+		<div class="video"></div>
+	</body>
+	<script type="text/javascript" src="./js/hls.min.js"></script>
+	<script type="text/javascript" src="./js/ckplayer.js"></script>
+	<script type="text/javascript" src="./js/jx.js"></script>
+</html>
